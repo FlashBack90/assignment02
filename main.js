@@ -14,7 +14,7 @@ openMenu();
 
 function openMenu() {
     rl.question('0) exit \n1) Create a new user name\n2) Delete user\n 3) Show all users\n 4) Create a new group\n 5) Delete group\n 6) Show all groups\n 7) Add user to a group\n'+
-        '8) Delete user from a group\n 9) Show all users in the group\n 10) Find user', start);
+        '8) Delete user from a group\n 9) Show all users in the group\n 10) Find user \n 11)Print the tree', start);
     function start(userInput) {
         userChoice = parseInt(userInput);
         switch (userChoice) {
@@ -50,7 +50,7 @@ function openMenu() {
                 break;
             case 10: getAssociatedGroups();
             break;
-            case 11: hasUser();
+            case 11: printTree();
             break;
             case 12: printTree();
             break;
